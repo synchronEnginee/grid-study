@@ -1,0 +1,32 @@
+body {
+  display: grid;
+  grid-template:
+    "header  header header" 1fr
+    "sidebar main   main  " 1fr
+    "footer  footer footer" 1fr
+    / 1fr 2fr 1fr;
+  margin: 0 auto;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  margin: 0 auto;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.sidebar-none {
+  display: none;
+}
