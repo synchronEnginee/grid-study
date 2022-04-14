@@ -13,6 +13,7 @@ body {
 .header {
   grid-area: header;
   margin: 0 auto;
+  padding: 4em;
 }
 
 .sidebar {
@@ -27,6 +28,24 @@ body {
   grid-area: footer;
 }
 
-.sidebar-none {
+/* サイドバー */
+.sidebar-toggle {
   display: none;
+}
+
+aside {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#sidebar-enable:checked ~ aside {
+  display: flex;
+}
+
+.sidebar aside nav li:nth-child(even) {
+  background-color: rgb(24, 245, 24);
 }
