@@ -22,6 +22,7 @@ body {
 
 .main {
   grid-area: main;
+  display: flex;
 }
 
 .footer {
@@ -46,6 +47,28 @@ nav {
   display: flex;
 }
 
-.sidebar aside nav li:nth-child(even) {
+aside nav li:nth-child(even) {
   background-color: rgb(24, 245, 24);
+}
+
+aside nav li:hover {
+  background-color: rgb(26, 1, 250);
+}
+
+/* ================================================================= */
+/* mainタブ */
+.tab-switch {
+  display: none;
+}
+
+.tab-label {
+  order: -1;
+}
+
+.main-content {
+  display: none;
+}
+
+.tab-switch:checked + .main-content {
+  display: block;
 }
