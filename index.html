@@ -7,38 +7,37 @@
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons%7CMaterial+Icons+Outlined"
       rel="stylesheet"
-    />
+      />
     <link href="./main.css" rel="stylesheet" />
     <title>GridStudy</title>
   </head>
   <body>
-    <div class="header">HEADERです</div>
-    <div class="sidebar">
-      <input id="sidebar-enable" type="checkbox" class="sidebar-toggle" />
-      <label for="sidebar-enable" class="material-icons-outlined"
-        >density_medium</label
-      >
-      <aside>
-        <nav>
-          <li>ページ1</li>
-          <li>ページ2</li>
-          <li>ページ3</li>
-          <li>ページ4</li>
-          <li>ページ5</li>
-        </nav>
-      </aside>
+    <!-- sidebarの位置を微調整する -->
+    <input id="sidebar-enable" type="checkbox" class="sidebar-toggle" />
+    <label for="sidebar-enable" class="material-icons-outlined sidebar">density_medium</label>
+    <div class="container">
+      <div class="header">HEADERです</div>
+      <div class="main">
+        <input id="TAB-01" type="radio" name="TAB" class="tab-switch" />
+        <div class="main-content">ボタン1のコンテンツ</div>
+        <label class="tab-label" for="TAB-01">ボタン 1</label>
+        <input id="TAB-02" type="radio" name="TAB" class="tab-switch" />
+        <div class="main-content">ボタン2のコンテンツ</div>
+        <label class="tab-label" for="TAB-02">ボタン 2</label>
+        <input id="TAB-03" type="radio" name="TAB" class="tab-switch" />
+        <div class="main-content">ボタン3のコンテンツ</div>
+        <label class="tab-label" for="TAB-03">ボタン 3</label>
+      </div>
+      <div class="footer">footerです</div>
     </div>
-    <div class="main">
-      <input id="TAB-01" type="radio" name="TAB" class="tab-switch" />
-      <div class="main-content">ボタン1のコンテンツ</div>
-      <label class="tab-label" for="TAB-01" checked="checked">ボタン 1</label>
-      <input id="TAB-02" type="radio" name="TAB" class="tab-switch" />
-      <div class="main-content">ボタン2のコンテンツ</div>
-      <label class="tab-label" for="TAB-02">ボタン 2</label>
-      <input id="TAB-03" type="radio" name="TAB" class="tab-switch" />
-      <div class="main-content">ボタン3のコンテンツ</div>
-      <label class="tab-label" for="TAB-03">ボタン 3</label>
-    </div>
-    <div class="footer">footerです</div>
+    <aside>
+      <nav>
+        <li>ページ1</li>
+        <li>ページ2</li>
+        <li>ページ3</li>
+        <li>ページ4</li>
+        <li>ページ5</li>
+      </nav>
+    </aside>
   </body>
 </html>
