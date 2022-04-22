@@ -140,6 +140,7 @@ aside nav li:hover {
   top: 20px;
 }
 
+/* モーダルの×マークのフレーム */
 .modal-close {
   background: transparent;
   border-color: transparent;
@@ -150,7 +151,8 @@ aside nav li:hover {
   display: block;
   height: 28px;
 }
-
+/* モーダルの×マークの線一つ。heightが1なので線みたいになってる
+   rotateで回転させることで×を作成している */
 .modal-close span {
   position: relative;
   width: 100%;
