@@ -31,6 +31,7 @@ body {
   grid-area: footer;
 }
 
+/* ================================================================= */
 /* sideバー */
 .sidebar {
   position: fixed;
@@ -109,7 +110,7 @@ aside nav li:hover {
   background-color: rgb(250, 156, 242);
 }
 
-/*----------------------------------------------------------------*/
+/* ================================================================= */
 /* モーダル */
 
 .modal {
@@ -183,4 +184,31 @@ aside nav li:hover {
 
 .modal.open {
   display: block;
+}
+
+/* ================================================================= */
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.wrap:not(:last-child) {
+  margin-bottom: 4%;
+}
+
+.wrap:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+img {
+  display: block;
+  width: 66%;
+  height: auto;
+}
+
+.box {
+  width: 22%;
 }
