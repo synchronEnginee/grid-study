@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 .container {
@@ -187,7 +188,7 @@ aside nav li:hover {
 }
 
 /* ================================================================= */
-
+/* zのレイアウト */
 .wrap {
   display: flex;
   justify-content: space-between;
@@ -210,5 +211,19 @@ img {
 }
 
 .box {
-  width: 22%;
+  width: 30%;
+}
+
+/* ================================================================= */
+/* レスポンシブ対応 */
+@media screen and (min-width: 768px) {
+  /* sideバー */
+  .sidebar {
+    display: none;
+  }
+
+  aside {
+    left: 0;
+  }
+
 }
