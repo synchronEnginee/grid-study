@@ -2,3 +2,35 @@ body {
     margin: 0px;
     font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   }
+
+/* ============================== */
+/* ページネーション */
+.pagenation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -20px;
+  list-style-type: none;
+}
+
+.pagenation li {
+  margin-top: 20px;
+}
+
+.pagenation li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.pagenation li a,
+.pagenation li span {
+  display: block;
+  padding: 20px;
+  line-height: 1;
+  background-color: #fff;
+  border: 1px solid #333333;
+}
+
+.pagenation li span {
+  color: #fff;
+  background-color: #333333;
+}
