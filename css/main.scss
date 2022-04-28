@@ -60,11 +60,11 @@ aside {
 
     li {
       &:nth-child(even) {
-        background-color: rgb(175 189 175);
+        background-color: rgb(161, 194, 161);
       }
 
       &:hover {
-        background-color: rgb(26 1 250);
+        background-color: rgb(26, 1, 250);
       }
     }
   }
@@ -84,7 +84,7 @@ aside {
       position: absolute;
       width: 100vw;
       height: 100vh;
-      background: rgb(0 0 0 / 80%) !important;
+      background: rgb(0, 0, 0 / 80%) !important;
     }
   }
 }
@@ -106,7 +106,7 @@ aside {
   &:checked {
     + .main-content {
       display: inline;
-      background-color: rgb(250 156 242);
+      background-color: rgb(250, 156, 242);
     }
   }
 }
@@ -115,7 +115,7 @@ aside {
   order: -1;
   width: 30%;
   height: 6vh;
-  background-color: rgb(253 241 128);
+  background-color: rgb(253, 241, 128);
   border: solid 10px;
 }
 
@@ -205,14 +205,14 @@ aside {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-}
 
-.wrap:not(:last-child) {
-  margin-bottom: 4%;
-}
+  &:not(:last-child) {
+    margin-bottom: 4%;
+  }
 
-.wrap:nth-child(even) {
-  flex-direction: row-reverse;
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
 }
 
 img {

@@ -11,5 +11,6 @@ module.exports = {
     ],
     rules: {
     'string-quotes': 'single',
+    "color-function-notation": "legacy"
     },
 };
