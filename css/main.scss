@@ -129,7 +129,8 @@ aside {
   left: 50%;
   display: none;
   width: 65%;
-  height: 80%;
+  height: 40%;
+  overflow-y: scroll;
   background: #fff;
   border: 1px solid #000;
   transform: translate(-50%, -50%);
@@ -142,6 +143,10 @@ aside {
     font-size: 14px;
     text-align: center;
     transform: translate(-50%, -50%);
+  }
+
+  p::before {
+    content: 'コンテンツ・内容が入ります。';
   }
 }
 
@@ -172,11 +177,11 @@ aside {
     background: black;
   }
 
-  &:nth-child(1) {
+  span:nth-child(1) {
     transform: rotate(45deg);
   }
 
-  &:nth-child(2) {
+  span:nth-child(2) {
     transform: rotate(-45deg);
   }
 }

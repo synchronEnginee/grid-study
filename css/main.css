@@ -126,7 +126,8 @@ aside nav li:hover {
   left: 50%;
   display: none;
   width: 65%;
-  height: 80%;
+  height: 40%;
+  overflow-y: scroll;
   background: #fff;
   border: 1px solid #000;
   -webkit-transform: translate(-50%, -50%);
@@ -142,6 +143,10 @@ aside nav li:hover {
   text-align: center;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.modal p::before {
+  content: 'コンテンツ・内容が入ります。';
 }
 
 .modal-close-wrap {
@@ -172,12 +177,12 @@ aside nav li:hover {
   background: black;
 }
 
-.modal-close:nth-child(1) {
+.modal-close span:nth-child(1) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.modal-close:nth-child(2) {
+.modal-close span:nth-child(2) {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
