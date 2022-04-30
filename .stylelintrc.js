@@ -11,6 +11,7 @@ module.exports = {
     ],
     rules: {
     'string-quotes': 'single',
-    "color-function-notation": "legacy"
+    "color-function-notation": "legacy",
+    'scss/at-import-partial-extension': ['always', , { "except": ["scss"] }]
     },
 };

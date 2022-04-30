@@ -1,4 +1,4 @@
-@import url('common.css');
+@import 'common.scss';
 
 .container {
   display: grid;
@@ -233,7 +233,7 @@ img {
 /* ================================================================= */
 
 /* レスポンシブ対応 */
-@media screen and (min-width: 768px) {
+@include media-pc {
   /* sideバー */
   .sidebar {
     display: none;
