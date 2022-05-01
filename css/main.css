@@ -175,18 +175,14 @@ aside nav li:hover {
           transform: translate(-50%, -50%);
 }
 
-.modal p {
+.modal-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 10;
+  top: 20px;
+  left: 40px;
   font-size: 14px;
-  text-align: center;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
-.modal p::before {
+.modal-content::before {
   content: 'コンテンツ・内容が入ります。';
 }
 
@@ -194,6 +190,7 @@ aside nav li:hover {
   position: absolute;
   top: 20px;
   right: 40px;
+  z-index: 11;
 }
 
 /* モーダルの×マークのフレーム */
