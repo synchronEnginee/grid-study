@@ -44,11 +44,18 @@ body {
   background-color: #333;
 }
 
-// PC用　　画面サイズが「$break-point」からはここを読み込む
-$break-pointpc: 768px;
+// レスポンシブ対応
+$break-point-pc: 1025px;
+$break-point-tablet: 600px;
+
+@mixin media-tablet {
+  @media screen, print and (min-width: $break-point-tablet) {
+    @content;
+  }
+}
 
 @mixin media-pc {
-  @media screen and (min-width: $break-pointpc) {
+  @media screen, print and (min-width: $break-point-pc) {
     @content;
   }
 }

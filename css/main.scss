@@ -139,7 +139,9 @@ aside {
 .modal-content {
   position: absolute;
   top: 20px;
-  left: 40px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: 5%;
   font-size: 14px;
 }
 
@@ -149,8 +151,8 @@ aside {
 
 .modal-close-wrap {
   position: absolute;
-  top: 20px;
-  right: 40px;
+  top: 2%;
+  right: 2%;
   z-index: 11;
 }
 
