@@ -1,4 +1,4 @@
-@import 'common.scss';
+@use './common';
 
 .container {
   display: grid;
@@ -37,6 +37,10 @@
   top: 0;
   left: 0;
   z-index: 1;
+
+  @include common.media-pc {
+    display: none;
+  }
 }
 
 .sidebar-toggle {
@@ -53,6 +57,14 @@ aside {
   height: 100vh;
   background: #fff;
   transition: all 0.2s;
+
+  @include common.media-tablet {
+    background: rgb(161, 194, 161);
+  }
+
+  @include common.media-pc {
+    left: 0;
+  }
 
   nav {
     width: 25vw;
@@ -84,7 +96,7 @@ aside {
       position: absolute;
       width: 100vw;
       height: 100vh;
-      background: rgb(0, 0, 0 / 80%) !important;
+      background: rgb(0, 0, 0) !important;
     }
   }
 }
@@ -228,18 +240,4 @@ img {
 
 .box {
   width: 30%;
-}
-
-/* ================================================================= */
-
-/* レスポンシブ対応 */
-@include media-pc {
-  /* sideバー */
-  .sidebar {
-    display: none;
-  }
-
-  aside {
-    left: 0;
-  }
 }

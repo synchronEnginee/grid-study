@@ -1,43 +1,0 @@
-@charset "UTF-8";
-body {
-  margin: 0;
-  font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Arial, 'Yu Gothic', Meiryo, sans-serif;
-}
-
-/* ============================== */
-/* ページネーション */
-.pagenation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: -20px;
-  list-style-type: none;
-}
-
-.pagenation li {
-  margin-top: 20px;
-}
-
-.pagenation li a,
-.pagenation li span {
-  display: block;
-  padding: 20px;
-  line-height: 1;
-  background-color: #fff;
-  border: 1px solid #333;
-}
-
-.pagenation:not(:last-child) {
-  margin-right: 20px;
-}
-
-.pagenation li span {
-  color: #fff;
-  background-color: #333;
-}
-/*# sourceMappingURL=common.css.map */

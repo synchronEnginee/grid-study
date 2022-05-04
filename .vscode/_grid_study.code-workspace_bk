@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "..\\css\\gird-study"
+		}
+	],
+	"settings": {
+		"dartsass.targetDirectory": "css/",
+		"dartsass.outputFormat": "cssonly",
+		//"dartsass.sassBinPath": "../node_modules/sass/sass.js",
+	},
+}
