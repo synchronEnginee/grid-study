@@ -66,7 +66,7 @@ body {
   left: 0;
   z-index: 1;
 }
-@media screen, print and (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
   .sidebar {
     display: none;
   }
@@ -87,12 +87,13 @@ aside {
   background: #fff;
   transition: all 0.2s;
 }
-@media screen, print and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 1024.98px) {
   aside {
+    left: -25vw;
     background: #a1c2a1;
   }
 }
-@media screen, print and (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
   aside {
     left: 0;
   }

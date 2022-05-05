@@ -47,15 +47,22 @@ body {
 // レスポンシブ対応
 $break-point-pc: 1025px;
 $break-point-tablet: 600px;
+$break-point-phone: 599.8px;
+
+@mixin media-phone {
+  @media screen and (max-width: $break-point-phone) {
+    @content;
+  }
+}
 
 @mixin media-tablet {
-  @media screen, print and (min-width: $break-point-tablet) {
+  @media screen and (min-width: $break-point-tablet) and (max-width: $break-point-pc - 0.02px) {
     @content;
   }
 }
 
 @mixin media-pc {
-  @media screen, print and (min-width: $break-point-pc) {
+  @media screen and (min-width: $break-point-pc) {
     @content;
   }
 }

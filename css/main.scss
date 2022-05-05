@@ -59,6 +59,7 @@ aside {
   transition: all 0.2s;
 
   @include common.media-tablet {
+    left: -25vw;
     background: rgb(161, 194, 161);
   }
 
