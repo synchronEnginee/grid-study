@@ -73,7 +73,7 @@ aside {
 
     li {
       &:nth-child(even) {
-        background-color: rgb(161, 194, 161);
+        background-color: rgb(238, 32, 32);
       }
 
       &:hover {
@@ -241,4 +241,23 @@ img {
 
 .box {
   width: 30%;
+}
+
+/* ================================================================= */
+
+/* 企業情報デザイン */
+dl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+dt {
+  width: 10%;
+  border-bottom: 2px solid #0277b4;
+}
+
+dd {
+  width: 20%;
+  border-bottom: 1px solid #6f6f6f;
 }

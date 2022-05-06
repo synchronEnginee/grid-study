@@ -103,7 +103,7 @@ aside nav {
   margin: 0 auto;
 }
 aside nav li:nth-child(even) {
-  background-color: #a1c2a1;
+  background-color: #ee2020;
 }
 aside nav li:hover {
   background-color: #1a01fa;
@@ -248,5 +248,23 @@ img {
 
 .box {
   width: 30%;
+}
+
+/* ================================================================= */
+/* 企業情報デザイン */
+dl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+dt {
+  width: 10%;
+  border-bottom: 2px solid #0277b4;
+}
+
+dd {
+  width: 20%;
+  border-bottom: 1px solid #6f6f6f;
 }
 /*# sourceMappingURL=main.css.map */
