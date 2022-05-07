@@ -156,6 +156,16 @@ aside {
   margin-right: auto;
   margin-left: 5%;
   font-size: 14px;
+
+  .question::before {
+    color: rgb(26, 1, 250);
+    content: 'Q. ';
+  }
+
+  .question {
+    font-size: 20px;
+    color: rgb(245, 9, 9);
+  }
 }
 
 .modal-content::before {

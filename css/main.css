@@ -170,6 +170,14 @@ aside nav li:hover {
   margin-left: 5%;
   font-size: 14px;
 }
+.modal-content .question::before {
+  color: #1a01fa;
+  content: "Q. ";
+}
+.modal-content .question {
+  font-size: 20px;
+  color: #f50909;
+}
 
 .modal-content::before {
   content: "コンテンツ・内容が入ります。";

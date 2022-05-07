@@ -1,5 +1,9 @@
 {
     "recommendations": [
-        "codelios.dartsass"
+        "codelios.dartsass",
+        "stylelint.vscode-stylelint",
+        "shardulm94.trailing-spaces",
+        "zignd.html-css-class-completion",
+        "oderwat.indent-rainbow"
     ]
 }
