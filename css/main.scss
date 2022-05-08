@@ -172,6 +172,21 @@ aside {
   content: 'コンテンツ・内容が入ります。';
 }
 
+.image-options {
+  input {
+    display: none;
+  }
+
+  label img {
+    display: inline;
+  }
+
+  input:checked + label img {
+    box-sizing: border-box;
+    border: 4px solid #000;
+  }
+}
+
 .modal-close-wrap {
   position: absolute;
   top: 2%;
@@ -241,12 +256,12 @@ aside {
   &:nth-child(even) {
     flex-direction: row-reverse;
   }
-}
 
-img {
-  display: block;
-  width: 66%;
-  height: auto;
+  img {
+    display: block;
+    width: 66%;
+    height: auto;
+  }
 }
 
 .box {
