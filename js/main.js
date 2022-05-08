@@ -11,22 +11,18 @@ close.on('click', function () {
 });
 
 document.getElementById('btn').addEventListener('click', ()=>{
-  const age = document.getElementsByName('age');
-  let ageLength = age.length
-  let checkedAge = '';
-  for (let i = 0; i < ageLength; i++) {
-    if (age.item(i).checked) {
-        checkedAge = age.item(i).value;
-    }
-  }
-  // 冗長なので後で関数切り出す
-  const size = document.getElementsByName('size');
-  const sizeLength = size.length
-  let checkedSize = '';
-  for (let i = 0; i < sizeLength; i++) {
-    if (age.item(i).checked) {
-        checkedSize = size.item(i).value;
-    }
-  }
-  console.log(checkedAge, checkedSize);
+  console.log(getFormValue('age'));
+  console.log(getFormValue('size'));
 })
+
+
+const getFormValue = (elementsName) => {
+  // ヌルポ注意
+  const elements = document.getElementsByName(elementsName);
+  const length = elements.length;
+  for (let i = 0; i < length; i++) {
+    if (elements.item(i).checked) {
+        return elements.item(i).value;
+    }
+  }
+}
